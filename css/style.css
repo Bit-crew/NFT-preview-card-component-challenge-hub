@@ -37,7 +37,7 @@ body {
 
 .card {
     width: 350px;
-    height: 600px;
+    height: 580px;
     background-color: var(--Very-dark-blue-card-BG);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -67,4 +67,53 @@ body {
 .semi-card > p {
     align-self: center;
     line-height: 25px;
+}
+
+.semi-card-status {
+    display: grid;
+    grid-template-columns: 35% 1fr 35%;
+    grid-template-rows: 100%;
+    align-items: center;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+:is(.etherum > img, .date > img, .etherum > p, .date > p) {
+    display: inline-block;
+}
+
+:is(.etherum > img, .date > img) {
+    margin-right: 3px;
+}
+
+.date {
+    grid-column: 3 / 4;
+}
+
+.etherum > p {
+    color: var(--Cyan);
+    font-weight: var(--font-weight-bold);
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 17% 1fr;
+    grid-template-rows: 100%;
+}
+
+:is(.profile > img, .profile > p) {
+    align-self: center;
+}
+
+.profile > img {
+    width: 35px;
+    height: auto;
+}
+
+.profile > p {
+    font-weight: var(--font-weight-light);
+}
+
+.profile > p > span {
+    color: var(--Cyan);
+    font-weight: var(--font-weight-bold);
 }
