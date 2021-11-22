@@ -67,6 +67,10 @@ body {
     transition: all .5 ease-in-out;
 }
 
+#active-card {
+    display: none;
+}
+
 .semi-card__image > div > img {
     position: absolute;
     transform: translate(-50%, -50%);
